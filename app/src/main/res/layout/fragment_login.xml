@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="5dp"
+    tools:context=".LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginFragmentBtn"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="71dp"
+        android:background="@drawable/login_register_button"
+        android:elevation="5dp"
+        android:fontFamily="@font/metropolis_semi_bold"
+        android:text="@string/prompt_login"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/login_form"
+        android:elevation="5dp"
+        android:hint="@string/prompt_email"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/login_form"
+        android:elevation="5dp"
+        android:hint="@string/prompt_password"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/emailEditText"
+        app:layout_constraintStart_toStartOf="@+id/emailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+    <CheckBox
+        android:id="@+id/ingatSayaCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/metropolis_regular"
+        android:text="@string/ingat_saya_checkbox"
+        android:textColor="@color/login_register_button"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/metropolis_semi_bold"
+        android:text="@string/lupa_password"
+        android:textColor="@color/login_register_button"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/ingatSayaCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/otherLoginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/other_login_method"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/loginFragmentBtn"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/loginFragmentBtn"
+        app:layout_constraintTop_toBottomOf="@+id/loginFragmentBtn" />
+
+    <View
+        android:id="@+id/rightLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="13dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/otherLoginTextView"
+        app:layout_constraintEnd_toEndOf="@+id/loginFragmentBtn"
+        app:layout_constraintStart_toEndOf="@+id/otherLoginTextView"
+        app:layout_constraintTop_toTopOf="@+id/otherLoginTextView" />
+
+    <View
+        android:id="@+id/leftLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="13dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/otherLoginTextView"
+        app:layout_constraintEnd_toStartOf="@+id/otherLoginTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loginFragmentBtn"
+        app:layout_constraintTop_toTopOf="@+id/otherLoginTextView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/googleLogin"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/another_login"
+        app:layout_constraintStart_toStartOf="@+id/leftLine"
+        app:layout_constraintTop_toBottomOf="@+id/otherLoginTextView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/facebookLogin"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/another_login"
+        app:layout_constraintEnd_toEndOf="@+id/rightLine"
+        app:layout_constraintTop_toBottomOf="@+id/otherLoginTextView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/twitterLogin"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/another_login"
+        app:layout_constraintEnd_toStartOf="@+id/facebookLogin"
+        app:layout_constraintStart_toEndOf="@+id/googleLogin"
+        app:layout_constraintTop_toBottomOf="@+id/otherLoginTextView" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:src="@drawable/ic_google"
+        app:layout_constraintBottom_toBottomOf="@+id/googleLogin"
+        app:layout_constraintEnd_toEndOf="@+id/googleLogin"
+        app:layout_constraintStart_toStartOf="@+id/googleLogin"
+        app:layout_constraintTop_toTopOf="@+id/googleLogin" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintBottom_toBottomOf="@+id/twitterLogin"
+        app:layout_constraintEnd_toEndOf="@+id/twitterLogin"
+        app:layout_constraintStart_toStartOf="@+id/twitterLogin"
+        app:layout_constraintTop_toTopOf="@+id/twitterLogin" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_twitter"
+        app:layout_constraintBottom_toBottomOf="@+id/facebookLogin"
+        app:layout_constraintEnd_toEndOf="@+id/facebookLogin"
+        app:layout_constraintStart_toStartOf="@+id/facebookLogin"
+        app:layout_constraintTop_toTopOf="@+id/facebookLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

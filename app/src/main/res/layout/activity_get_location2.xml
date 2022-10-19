@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetLocationActivity2">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/metropolis_semi_bold"
+        android:text="@string/location_title"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/metropolis_regular"
+        android:text="@string/location_desc"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/searchLocationEditText"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/outlined_button_primary"
+        android:drawableStart="?android:attr/actionModeWebSearchDrawable"
+        android:drawableEnd="@drawable/ic_close"
+        android:drawablePadding="9dp"
+        android:fontFamily="@font/metropolis_regular"
+        android:hint="@string/location_input"
+        android:paddingStart="16dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/locationOption1"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/location_option"
+        android:drawablePadding="9dp"
+        android:fontFamily="@font/metropolis_regular"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="2"
+        android:paddingStart="12dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="10dp"
+        android:text="@string/location_option_1"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:drawableStartCompat="@drawable/ic_location"
+        app:layout_constraintEnd_toEndOf="@+id/searchLocationEditText"
+        app:layout_constraintStart_toStartOf="@+id/searchLocationEditText"
+        app:layout_constraintTop_toBottomOf="@+id/searchLocationEditText" />
+
+    <TextView
+        android:id="@+id/locationOption2"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/location_option"
+        android:drawablePadding="9dp"
+        android:fontFamily="@font/metropolis_regular"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="2"
+        android:paddingStart="12dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="10dp"
+        android:text="@string/location_option_2"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:drawableStartCompat="@drawable/ic_location"
+        app:layout_constraintEnd_toEndOf="@+id/locationOption1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/locationOption1"
+        app:layout_constraintTop_toBottomOf="@+id/locationOption1" />
+
+    <TextView
+        android:id="@+id/locationOption3"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/location_option"
+        android:drawablePadding="9dp"
+        android:fontFamily="@font/metropolis_regular"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="2"
+        android:paddingStart="12dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="10dp"
+        android:text="@string/location_option_3"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:drawableStartCompat="@drawable/ic_location"
+        app:layout_constraintEnd_toEndOf="@+id/locationOption2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/locationOption2"
+        app:layout_constraintTop_toBottomOf="@+id/locationOption2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
