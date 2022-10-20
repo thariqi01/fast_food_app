@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">Fast Food</string>
-    <string name="get_started_title_1">Gabung Sekarang dan Nikmati Fiturnya</string>
-    <string name="get_started_desc_1">Kami siap melayani anda kapanpun dan dimanapun</string>
-    <string name="get_started_button">Get Started</string>
+
     <!-- Strings related to login -->
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
@@ -14,6 +12,17 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ingat_saya_checkbox">Ingat Saya</string>
     <string name="lupa_password">Lupa Password</string>
+
+    <!--  Get Started Act  -->
+    <string name="get_started_title_1">Temukan yang anda inginkan</string>
+    <string name="get_started_desc_1">Dapatkan rekomendasi makanan dan minuman di sekitar anda.</string>
+
+    <string name="get_started_title_2">Informasi nutrisi di setiap makanan</string>
+    <string name="get_started_desc_2">Detail informasi nilai gizi dapat anda temukan pada setiap makanan.</string>
+
+    <string name="get_started_title_3">Gabung Sekarang dan Nikmati Fiturnya</string>
+    <string name="get_started_desc_3">Daftar dan masuk sekarang untuk menikmati semua fitur Fast Food. </string>
+    <string name="get_started_button">Get Started</string>
 
     <!--  Login & Register Act  -->
     <string name="other_login_method">Atau lanjutkan dengan</string>
