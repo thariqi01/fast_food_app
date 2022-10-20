@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/welcome_background"
+    android:background="@color/primary"
     tools:context=".WelcomeActivity">
 
     <View
         android:id="@+id/view3"
         android:layout_width="320dp"
         android:layout_height="390dp"
-        android:background="@drawable/get_started_button"
+        android:background="@drawable/welcome_card"
         android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,7 +57,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"

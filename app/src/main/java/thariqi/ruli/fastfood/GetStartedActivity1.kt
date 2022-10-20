@@ -18,5 +18,21 @@ class GetStartedActivity1 : AppCompatActivity() {
             val intent = Intent(this@GetStartedActivity1, GetStartedActivity2::class.java)
             startActivity(intent)
         }
+
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
